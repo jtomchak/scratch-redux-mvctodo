@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 import { bindActionsCreators, bindActionCreators } from "redux";
 import { connect } from "react-redux";
 
-import Header from "../Header";
-import MainSection from "../Main";
-import * as TodoActions from "../../actions";
+import Header from "./Header";
+import MainSection from "./MainSection";
+import * as TodoActions from "../actions";
 
 const App = ({ todos, actions }) => {
   return (

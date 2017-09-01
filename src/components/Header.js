@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import TodoTextInput from "../Todo/TodoTextInput";
+import TodoTextInput from "./TodoTextInput";
 import PropTypes from "prop-types";
 
 export default class Header extends Component {
@@ -17,7 +17,11 @@ export default class Header extends Component {
       <div>
         <header className="header">
           <h1>todos</h1>
-          <TodoTextInput onSave={this.handleSave} placeholder="et tu to do?" />
+          <TodoTextInput
+            newTodo
+            onSave={this.handleSave}
+            placeholder="et tu to do?"
+          />
         </header>
       </div>
     );
